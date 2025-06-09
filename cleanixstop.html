@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link  rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./WEBSITEE/Untitled_design_20250608_194459_0000-removebg-preview.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <title>CLEANIX</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.521)),url('../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.48\ \(1\).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-attachment:fixed ;
+}
+.navigation{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    background-color: #0f1a2be8;
+    position: fixed;
+}
+.navigation .box-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .box-navigation .box:nth-child(1) h1{
+    font-size: 38px;
+    color: azure;
+}
+.navigation .box-navigation .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+}
+.navigation .box-navigation .box:nth-child(2) ul li{
+    list-style-type: none;
+    margin-left: 40px;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a{
+    text-decoration: none;
+    color: azure;
+    transition: all .3s;
+}
+.navigation .box-navigation .box:nth-child(2) ul li a:hover{
+    color: aqua;
+}
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+.navigation .box-navigation .box:nth-child(2) ul li i{
+    display: none;
+}
+header .hero{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+header .hero h1{
+    color: rgba(255, 255, 255, 0.788);
+    font-size: 50px;
+    text-align: center;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #D5DEEF;
+    background-image: linear-gradient(#d5deefec, #d5deefe8), url(../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.48\ \(1\).jpeg);
+
+}
+.about .box-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.about .box-about .box:nth-child(1) {
+    padding-right: 30px;
+
+}
+.about .box-about .box:nth-child(1) h1{
+    font-size:42px;
+}
+.about .box-about .box:nth-child(1) p{
+    line-height: 2;
+    font-size: 20px;
+}
+.about .box-about .box:nth-child(2) img{
+    border-radius: 5px;
+    width: 600px;
+}
+.famous {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.famous .container h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+.famous .box-famous .box h1{
+    font-size: 20px;
+}
+.famous .box-famous{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.famous .box-famous .box{
+    text-align: center;
+    margin-inline: 20px;
+}
+.famous .box-famous .box img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.production{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #D5DEEF;
+    padding-bottom: 50px;
+    background-image: linear-gradient(#d5deefda, #d5deefd7),url(..//WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.48.jpeg);
+
+}
+.production .box-production .box{
+    align-items: center;
+    width: 100%;
+}
+.production .box-production .box h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color:rgb(6, 6, 46)
+
+}
+.production .box-production .box ol li{
+    font-size: 20px;
+    text-align: center;
+    list-style-position: inside;
+}
+.production .box-production{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.production.box-production.box:nth-child(1) img{
+    padding-right: 30px;
+    width: 600px;
+}
+.production .box-production .box p{
+    line-height: 2;
+    font-size: 40px;
+}
+.production.box-production.box:nth-child(2) ol{
+    font-size: 100px;
+    
+}
+.langkah{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #0f1a2b;
+    background-image: linear-gradient(#0f1a2bef, #0f1a2bf1),url(../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.49.jpeg);
+
+}
+.langkah .box-langkah{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    margin-top: 70px;
+    
+}
+.langkah .box-langkah .box:nth-child(1) {
+    padding-right: 30px;
+
+}
+.langkah .box-langkah .box:nth-child(1) h1{
+    font-size:42px;
+    color: antiquewhite;
+}
+.langkah .box-langkah .box:nth-child(1) p{
+    line-height: 3;
+    font-size: 15px;
+    color: antiquewhite;
+    margin-bottom: 2px;
+}
+.langkah .box-langkah .box:nth-child(2) img{
+    border-radius: 5px;
+    width: 600px;
+}
+.value {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)), url(../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.49\ \(1\).jpeg);
+
+}
+.value .container h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:#0f1a2b;
+}
+.value .box-value{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.value .box-value .box{
+    text-align: center;
+    margin-inline: 20px;
+    margin-bottom: 10px;
+}
+.value .box-value .box img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.value .box-value .box h1{
+    color:#1564db;
+    font-size: 25px;
+}
+.value .box-value .box p{
+    color:#103975;
+}
+.kekurangan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-top: 120px;
+    background-color: #1c2e4a;
+    background-image:linear-gradient(rgba(17, 17, 36, 0.945)),url(../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.49\ \(2\).jpeg);
+
+
+}
+.kekurangan .container h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:#ffffff;
+    padding-top: 60px;
+}
+.kekurangan .box-kekurangan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.kekurangan.box-kekurangan .box{
+    text-align: center;
+    margin-inline: 20px;
+    margin-bottom: 0px;
+}
+.kekurangan .box-kekurangan .box img{
+    border-radius: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+.kekurangan .box-kekurangan .box h1{
+    color:#d8dce2;
+    font-size: 20px;
+    text-align: center;
+}
+.kekurangan .box-kekurangan .box p{
+    color:#ffffff;
+}
+.gallery{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.712)),url(..//WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.48\ \(1\).jpeg);
+}
+.gallery .box-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery .box-gallery img{
+    width: 300px;
+    margin: 10px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    padding: 30px 0 30px 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.712)), url(../WEBSITEE/WhatsApp\ Image\ 2025-06-08\ at\ 19.42.48\ \(1\).jpeg);
+}
+@media  screen and (max-width:1200px) {
+    .about .box-about .box:nth-child(2) img{
+        width:400px;
+    }
+}
+@media screen and (max-width:990px){
+    .navigation .box-navigation .box:nth-child(2){
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: azure;
+        width: 250px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    .navigation .box-navigation .menu-navigation.menu-active{
+        opacity: 1;
+        top: 100px;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li i{
+        margin-inline: 10px;
+        font-size: 24px;
+        display: inline-block;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul{
+        flex-direction: column;
+    }
+    .navigation .box-navigation .box:nth-child(2) ul li a{
+        color: black;
+    }
+    
+    .navigation .box-navigation .box:nth-child(3){
+        display: flex;
+        align-items: center;
+    }
+    .navigation .box-navigation .box:nth-child(3) i{
+        font-size: 30px;
+    }
+    header .hero h1{
+        font-size: 34px;
+    }
+    .about .box-about{
+        flex-direction: column-reverse;
+    }
+    .about .box-about .box:nth-child(1){
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about .box-about .box:nth-child(2) img{
+        width : 400px;
+    }
+    .famous .box-famous{
+        flex-direction: column;
+    }
+    .famous.box-famous.box img{
+        width:300px;
+    }
+    .famous{
+        height: 100%;
+        margin-top: 40px;
+        padding-top: 50px;
+    }
+    .famous.box-famous.box{
+        margin-bottom: 20px;
+    }
+    .production .box-production{
+        flex-direction: column;
+        display: flex;
+    }
+    .production.box-production.box img{
+        width:300px;
+    }
+    .production{
+        height: 100%;
+        margin-top: 40px;
+        padding-top: 50px;
+        align-items: center;
+        background-color: #D5DEEF;
+        
+    }
+    .production.box-production.box{
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .langkah{
+        height: 100%;
+    }
+    .langkah .box-langkah{
+        flex-direction: column-reverse;
+    }
+    .langkah .box-langkah .box:nth-child(1){
+        text-align: center;
+        margin-top: 30px;
+    }
+    .langkah .box-langkah .box:nth-child(2) img{
+        width : 400px;
+    }
+    .value .box-value{
+        flex-direction: column;
+    }
+    .value.box-value.box img{
+        width:300px;
+    }
+    .value{
+        height: 100%;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+    .value.box-value .box{
+        margin-bottom: 10px;
+    }
+    .kekurangan .box-kekurangan{
+        flex-direction: column;
+    }
+    .kekurangan.box-kekurangan .box img{
+        width:300px;
+    }
+    .kekurangan{
+        height: 100%;
+        margin-top: 40px;
+        padding-top: 50px;
+    }
+    .kekurangan .box-kekurangan .box{
+        margin-bottom: 20px;
+    }
+    .gallery{
+        height: 100%;
+    }
+}
+@media screen and (max-width:748px) {
+    header .hero h1{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:575px){
+    .about .box-about .box:nth-child(1) h{
+        font-size: 34px;
+    }
+    .about .box-about .box:nth-child(1) p{
+        font-size: 12px;
+    }
+    .about .box-about .box:nth-child(2) img{
+        width: 300px;
+    }
+    .famous.box-famous.box img{
+        width:250px;
+
+    }
+    .famous.box-famous .box h1{
+        font-size: 15px;
+}
+    
+}
+@media screen and (max-width:475px) {
+    header .hero h1{
+        font-size: 20px ;
+
+    }
+    .about .box-about .box:nth-child(1) h{
+        font-size: 28px
+    }
+    .about .box-about .box:nth-child(1) p{
+        font-size: 12px;
+    }
+    .about .box-about .box:nth-child(2) img{
+        width: 250px;
+    }
+    .famous .box-famous .box img{
+        width:200px;
+
+    }
+    .famous.box-famous .box h1{
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+<!-- navigation-->
+<header>
+    <section class="navigation">
+        <div class="container">
+            <div class="box-navigation animate__animated animate__bounceInDown ">
+                <div class="box">
+                    <h1>Cleanix</h1>
+                </div>
+                <div class="box menu-navigation">
+                    <ul>
+                        <li>
+                            <i class="ri-home-3-line"></i>
+                            <a href="#about">About</a></li>
+                        <li>
+                            <i class="ri-team-line"></i>
+                            <a href="#team">Team</a></li>
+                        <li>
+                            <i class="ri-archive-line"></i>
+                            <a href="#production">Production</a></li>
+                        <li>
+                            <i class="ri-medal-2-line"></i>
+                            <a href="#value">Values</a></li>
+                        <li>
+                            <i class="ri-image-ai-fill"></i>
+                            <a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="box menu-bar">
+                    <i class="ri-menu-3-line" style="color: azure;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <h1 class="animate__animated animate__bounceInDown">Cleanix; Inovasi Mengolah Kardus Bekas Menjadi Sapu Otomatis.</h1>
+
+    </section>
+</header>
+<section id="about">
+<section class="about">
+    <div class="container">
+        <div class="box-about">
+            <div class="box" >
+              <h1>Cleanix</h1>
+              <p>Inovasi mengolah kardus bekas, tali rafia, dan dinamo bekas menjadi sapu otomatis yang memiliki nilai fungsional serta dapat membantu kegiatan sehari-hari. Cleanix menjadi terobosan dalam mengurangi jumlah limbah kardus terutama di rumah, dengan menggunakan kembali (reuse) kardus yang tidak digunakan.</p>  
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 15.09.02.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<section id="team">
+<section class="famous">
+    <div class="container">
+        <h1>Anggota Kelompok 3</h1>
+        <div class="box-famous">
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 14.42.16 (1).jpeg" >
+                <h1>Jihan Khallila Putri Buwono</h1>
+            </div>
+        
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 14.42.16.jpeg"/>
+                <h1>Heidi Michele Tofan Arif</h1>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 14.42.17.jpeg" />
+                <h1>Nawlaleta Fayyaza Rida H.</h1>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 14.52.30.jpeg" />
+                <h1>Rheema Sholihah</h1>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 14.42.17 (1).jpeg" />
+                <h1>Shafira Rahmani Putri</h1>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="production">
+<section class="production">
+    <div class="container">
+        <div class="box-production">
+            <div class="box">
+                <img src="./WEBSITEE/IMG-20250608-WA0060-removebg-preview.png" alt="">
+            </div>
+            <div class="box">
+                <h1>Alat dan Bahan</h1>
+                <p> Bahan: <ol>
+                    <li>Kardus Bekas</li>
+                    <li>Dinamo kecil</li>
+                    <li>tali rafia 15cm</li>
+                    <li>Tutup botol</li>
+                    <li>tusuk sate</li>
+                    <li>pipa bekas 1m</li>
+                    <li>Baterai 9V</li>
+                    <li>Kabel</li>
+                    <li>Saklar mini</li>
+                </ol></p>
+            </div>
+            <div class="box">
+                <p> Alat: <ol>
+                    <li>Gunting/Cutter</li>
+                    <li>Lem tembak</li>
+                    <li>Solder</li>
+
+                </ol></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="langkah">
+    <div class="container">
+        <div class="box-langkah">
+            <div class="box">
+              <h1>Langkah Pembuatan: </h1>
+              <p>1. Menentukan desain sistem alat tersebut, dan memilih Kardus bekas.</p>
+              <p>  2. Potong kardus menjadi 4 bagian: </p>
+                <p>- bagian alas dan tutup dengan ukuran 18,5 cm x 16,5 cm
+                <P>- sisi kiri dan kanan alat dengan membentuk persegi panjang, namun bagian atas terdapat sisi miring. sisi miring dengan panjang 22,5 cm, sisi bawah 20 cm, tinggi satu sisi 8,5 cm dan sisi satunya 6,5 cm. </p>
+                <p>3. Sebelum merakit potongan kardus, beri warna / cat dahulu potongan potongan kardus, selanjutnya rakit potongan kardus.</p>
+                <p>4. Lem bagian bawa 2 tutup botol lalu buat lubang di bagian tengah. Ambil lagi 2 tutup botol dan tusukkan di masing-masing ujung sumpit/tusuk sate dan lekatkan dibagian bawah alat untuk menjadi roda. </p>
+                <P>5. Siapkan Tali Rafia dan Sumpit, potong Tali memendek beberapa bagian agar menyerupai sikat, lalu siapkan Sumpit dan belah Sumpit, namun tidak sampai terbelah menjadi dua. Selanjutnya masukkan Tali tersebut ke dalam belahan Sumpit. Masukkan sumpit ke dalam lubang tutup botol dan lem kembali agar tidak bergeser.</p>
+                <p>6. Langkah selanjutnya adalah menyambungkan kabel dari dinamo ke sakelar on/off, lalu pasangkan sakelar on/off. Selanjutnya sambungkan sakelar ke baterai dan dinamo.</p>
+                <P>7. rakit kerangka alat, lubangi bagian ujung depan sisi kiri dan kanan untuk tempat sumpit. lekatkan dinamo di bagian dalam alat (di belakang sumpit) dan susun letak baterai dan saklar agar tidak berantakan.</p>
+                <p>8. sambungkan ujung dinamo dengan tutup botol yang ada pada sumpit menggunakan karet/ benang elastis. </p>
+                <p>9. Buat engsel dengan sumpit dan kardus. Potong sumpit menjadi 2 sebagai penyangga engsel dan tusukkan serta lekatkan pada bagian belakang alat. Bentuk kardus menjaddi 1 tabung horizontal yang kiri kanannya dilubangi untuk dimasuki sumpit panjang agar bisa berputar.</p>  
+                <p>10. Buat 1 tabung kardus lagi, kali ini tanpa tutup dan alas serta seukuran dengan pipa yang digunakan. lekatkan pada sisi samping tabung yang sudah dimasuki sumpit. sekarang pipa dapat dilepas-pasang.</p>
+                <p>11. Ujilah dengan menggunakan sampah kecil ataupun remah-remah.</p>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.48.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<section id="value">
+<section class="value">
+    <div class="container">
+        <h1>Keunggulan Cleanix</h1>
+        <div class="box-value">
+            <div class="box">
+                <img src="./WEBSITEE/kardus.png" >
+                <h1>Ramah Lingkungan</h1>
+                <p>Mengurangi limbah kardus</p>
+            </div>
+        
+            <div class="box">
+                <img src="./WEBSITEE/duit.png"/>
+                <h1>Harga terjangkau</h1>
+                <p>Menggunakan barang-barang bekas yang tidak dipakai</p>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/WhatsApp_Image_2025-06-09_at_15.36.20-removebg-preview.png" />
+                <h1>Praktis dan Sederhana</h1>
+                <p>Desain yang mudah untuk dibuat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="kekurangan">
+    <div class="container">
+        <h1>Kelemahan Cleanix</h1>
+        <div class="box-kekurangan">
+            <div class="box">
+                <img src="./WEBSITEE/Frisches_Wasser_Splash_auf_weißem_Hintergrund___Premium_Vektor-removebg-preview.png" >
+                <h1>Tidak Tahan air</h1>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/Download_premium_vector_of_Blue_stopwatch_icon_graphic_illustration_by_Minty_about_art__icon__illustration__clock__and_vector_429490-removebg-preview.png"/>
+                <h1>Dapat rusak seiring waktu</h1>
+            </div>
+            <div class="box">
+                <img src="./WEBSITEE/Katakan_Tidak_Pada_Sampah_Plastik__Plastik__Tas__Melarang_PNG_Transparan_dan_Clipart_untuk_Unduhan_Gratis-removebg-preview.png" />
+                <h1>Tidak dapat menampung sampah terlalu banyak</h1>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<section id="gallery">
+<section class="gallery">
+    <div class="container">
+        <div class="box-gallery">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.47 (1).jpeg" alt="">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.47.jpeg" alt="">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.48.jpeg" alt="">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.49 (2).jpeg" alt="">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-08 at 19.42.49.jpeg" alt="">
+            <img src="./WEBSITEE/WhatsApp Image 2025-06-09 at 15.09.02.jpeg" alt="">
+        </div>
+    </div>
+</section>
+</section>
+<section class="video">
+    <video id="myVideo" width="640" height="360" style="cursor: pointer;">
+    <source src="./WEBSITEE/WhatsApp Video 2025-06-09 at 17.55.30.mp4" type="video/mp4">
+    
+  </video>
+
+  <script>
+    const video = document.getElementById('myVideo');
+    video.addEventListener('click', function () {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  </script>
+</section>
+<script src="./js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
